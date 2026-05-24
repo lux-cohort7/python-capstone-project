@@ -1,0 +1,1202 @@
+[
+  {
+    "number": 1,
+    "title": "Write get_grade(score) \u2014 return letter grade",
+    "task": "Write a function get_grade(score) that takes a number (0\u2013100) and returns 'A' for 90+, 'B' for 80+, 'C' for 70+, 'D' for 60+, and 'F' for below 60.",
+    "test": "print(get_grade(85))",
+    "output": "B",
+    "student_branch": "issue-01/get-grade",
+    "project_branch": "project/student-results",
+    "label": "conditionals"
+  },
+  {
+    "number": 2,
+    "title": "Write get_grade_remark(grade) \u2014 return remark",
+    "task": "Write a function that takes a grade letter ('A','B','C','D','F') and returns a remark: 'Excellent', 'Good', 'Average', 'Below Average', 'Fail'.",
+    "test": "print(get_grade_remark('A'))",
+    "output": "Excellent",
+    "student_branch": "issue-02/grade-remark",
+    "project_branch": "project/student-results",
+    "label": "conditionals"
+  },
+  {
+    "number": 3,
+    "title": "Write calculate_average(scores) \u2014 return average",
+    "task": "Write a function that takes a list of numbers and returns their average rounded to 2 decimal places.",
+    "test": "print(calculate_average([80, 90, 70, 60]))",
+    "output": "75.0",
+    "student_branch": "issue-03/calculate-average",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 4,
+    "title": "Write get_highest_score(scores) \u2014 return max",
+    "task": "Write a function that takes a list of scores and returns the highest score WITHOUT using the built-in max() function. Use a loop.",
+    "test": "print(get_highest_score([55, 90, 73, 88]))",
+    "output": "90",
+    "student_branch": "issue-04/highest-score",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 5,
+    "title": "Write get_lowest_score(scores) \u2014 return min",
+    "task": "Write a function that takes a list of scores and returns the lowest score WITHOUT using the built-in min() function. Use a loop.",
+    "test": "print(get_lowest_score([55, 90, 73, 88]))",
+    "output": "55",
+    "student_branch": "issue-05/lowest-score",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 6,
+    "title": "Write count_passed(scores) \u2014 count passes",
+    "task": "Write a function that takes a list of scores and counts how many students scored 50 or above. Return the count.",
+    "test": "print(count_passed([45, 60, 55, 30, 80]))",
+    "output": "3",
+    "student_branch": "issue-06/count-passed",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 7,
+    "title": "Write count_failed(scores) \u2014 count failures",
+    "task": "Write a function that takes a list of scores and counts how many students scored below 50. Return the count.",
+    "test": "print(count_failed([45, 60, 55, 30, 80]))",
+    "output": "2",
+    "student_branch": "issue-07/count-failed",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 8,
+    "title": "Write create_student(name, score) \u2014 return dict",
+    "task": "Write a function that takes a student name and score, and returns a dictionary with keys: 'name', 'score', 'grade'. Use get_grade() logic inside.",
+    "test": "print(create_student('Amina', 88))",
+    "output": "{'name': 'Amina', 'score': 88, 'grade': 'B'}",
+    "student_branch": "issue-08/create-student",
+    "project_branch": "project/student-results",
+    "label": "data-structures"
+  },
+  {
+    "number": 9,
+    "title": "Write add_student(students, name, score) \u2014 add to list",
+    "task": "Write a function that takes a list of student dicts, a name, and a score. Creates a student dict and appends it to the list. Return the updated list.",
+    "test": "students = []\nprint(add_student(students, 'Brian', 72))",
+    "output": "[{'name': 'Brian', 'score': 72, 'grade': 'C'}]",
+    "student_branch": "issue-09/add-student",
+    "project_branch": "project/student-results",
+    "label": "data-structures"
+  },
+  {
+    "number": 10,
+    "title": "Write find_student(students, name) \u2014 search by name",
+    "task": "Write a function that searches a list of student dicts by name. Return the student dict if found, or 'Not found' if not.",
+    "test": "students = [{'name': 'Amina', 'score': 88, 'grade': 'B'}]\nprint(find_student(students, 'Amina'))",
+    "output": "{'name': 'Amina', 'score': 88, 'grade': 'B'}",
+    "student_branch": "issue-10/find-student",
+    "project_branch": "project/student-results",
+    "label": "data-structures"
+  },
+  {
+    "number": 11,
+    "title": "Write remove_student(students, name) \u2014 delete by name",
+    "task": "Write a function that takes a list of student dicts and a name. Remove the student with that name and return the updated list. If not found, return list unchanged.",
+    "test": "students = [{'name': 'Amina', 'score': 88, 'grade': 'B'}, {'name': 'Brian', 'score': 72, 'grade': 'C'}]\nprint(remove_student(students, 'Amina'))",
+    "output": "[{'name': 'Brian', 'score': 72, 'grade': 'C'}]",
+    "student_branch": "issue-11/remove-student",
+    "project_branch": "project/student-results",
+    "label": "data-structures"
+  },
+  {
+    "number": 12,
+    "title": "Write list_all_students(students) \u2014 print all",
+    "task": "Write a function that takes a list of student dicts and prints each student's name, score and grade neatly on one line each.",
+    "test": "students = [{'name': 'Amina', 'score': 88, 'grade': 'B'}]\nlist_all_students(students)",
+    "output": "Amina | Score: 88 | Grade: B",
+    "student_branch": "issue-12/list-students",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 13,
+    "title": "Write is_valid_score(score) \u2014 validate input",
+    "task": "Write a function that takes a score and returns True if it is a number between 0 and 100, and False otherwise.",
+    "test": "print(is_valid_score(105))\nprint(is_valid_score(75))",
+    "output": "False\nTrue",
+    "student_branch": "issue-13/valid-score",
+    "project_branch": "project/student-results",
+    "label": "conditionals"
+  },
+  {
+    "number": 14,
+    "title": "Write is_valid_name(name) \u2014 validate name",
+    "task": "Write a function that returns True if a name is a non-empty string with no digits, False otherwise.",
+    "test": "print(is_valid_name('Amina'))\nprint(is_valid_name(''))",
+    "output": "True\nFalse",
+    "student_branch": "issue-14/valid-name",
+    "project_branch": "project/student-results",
+    "label": "conditionals"
+  },
+  {
+    "number": 15,
+    "title": "Write count_grade(students, grade) \u2014 count by grade",
+    "task": "Write a function that takes a list of student dicts and a grade letter, and counts how many students have that grade.",
+    "test": "students = [{'name':'A','score':90,'grade':'A'},{'name':'B','score':85,'grade':'B'},{'name':'C','score':92,'grade':'A'}]\nprint(count_grade(students, 'A'))",
+    "output": "2",
+    "student_branch": "issue-15/count-grade",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 16,
+    "title": "Write get_top_student(students) \u2014 return best student",
+    "task": "Write a function that loops through a list of student dicts and returns the one with the highest score.",
+    "test": "students = [{'name':'Amina','score':88,'grade':'B'},{'name':'Brian','score':95,'grade':'A'}]\nprint(get_top_student(students))",
+    "output": "{'name': 'Brian', 'score': 95, 'grade': 'A'}",
+    "student_branch": "issue-16/top-student",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 17,
+    "title": "Write sort_students_by_score(students) \u2014 sort descending",
+    "task": "Write a function that returns a new list of student dicts sorted by score from highest to lowest. Use bubble sort or any manual sorting \u2014 no sorted() built-in.",
+    "test": "students = [{'name':'A','score':70,'grade':'C'},{'name':'B','score':90,'grade':'A'}]\nprint(sort_students_by_score(students)[0]['name'])",
+    "output": "B",
+    "student_branch": "issue-17/sort-students",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 18,
+    "title": "Write get_class_summary(students) \u2014 return dict summary",
+    "task": "Write a function that returns a dict with: 'total', 'passed', 'failed', 'average' for the whole class.",
+    "test": "students = [{'name':'A','score':80,'grade':'B'},{'name':'B','score':40,'grade':'F'}]\nprint(get_class_summary(students))",
+    "output": "{'total': 2, 'passed': 1, 'failed': 1, 'average': 60.0}",
+    "student_branch": "issue-18/class-summary",
+    "project_branch": "project/student-results",
+    "label": "functions"
+  },
+  {
+    "number": 19,
+    "title": "Write update_score(students, name, new_score) \u2014 edit score",
+    "task": "Write a function that finds a student by name and updates their score and grade. Return the updated list.",
+    "test": "students = [{'name':'Amina','score':55,'grade':'C'}]\nprint(update_score(students,'Amina',90))",
+    "output": "[{'name': 'Amina', 'score': 90, 'grade': 'A'}]",
+    "student_branch": "issue-19/update-score",
+    "project_branch": "project/student-results",
+    "label": "data-structures"
+  },
+  {
+    "number": 20,
+    "title": "Write get_students_by_grade(students, grade) \u2014 filter",
+    "task": "Write a function that returns a list of only students who have the given grade.",
+    "test": "students = [{'name':'A','score':90,'grade':'A'},{'name':'B','score':70,'grade':'C'}]\nprint(get_students_by_grade(students,'A'))",
+    "output": "[{'name': 'A', 'score': 90, 'grade': 'A'}]",
+    "student_branch": "issue-20/students-by-grade",
+    "project_branch": "project/student-results",
+    "label": "loops"
+  },
+  {
+    "number": 21,
+    "title": "Write format_student_report(student) \u2014 format string",
+    "task": "Write a function that takes a student dict and returns a formatted string: 'Name: Amina | Score: 88/100 | Grade: B | Remark: Good'",
+    "test": "print(format_student_report({'name':'Amina','score':88,'grade':'B'}))",
+    "output": "Name: Amina | Score: 88/100 | Grade: B | Remark: Good",
+    "student_branch": "issue-21/format-report",
+    "project_branch": "project/student-results",
+    "label": "strings"
+  },
+  {
+    "number": 22,
+    "title": "Write get_score_range(students) \u2014 return range",
+    "task": "Write a function that returns the difference between the highest and lowest scores in the class.",
+    "test": "students = [{'name':'A','score':90,'grade':'A'},{'name':'B','score':55,'grade':'C'}]\nprint(get_score_range(students))",
+    "output": "35",
+    "student_branch": "issue-22/score-range",
+    "project_branch": "project/student-results",
+    "label": "functions"
+  },
+  {
+    "number": 23,
+    "title": "Write has_student(students, name) \u2014 check existence",
+    "task": "Write a function that returns True if a student with the given name exists in the list, False otherwise.",
+    "test": "students = [{'name':'Amina','score':88,'grade':'B'}]\nprint(has_student(students,'Amina'))\nprint(has_student(students,'Brian'))",
+    "output": "True\nFalse",
+    "student_branch": "issue-23/has-student",
+    "project_branch": "project/student-results",
+    "label": "conditionals"
+  },
+  {
+    "number": 24,
+    "title": "Write get_all_names(students) \u2014 extract names list",
+    "task": "Write a function that takes a list of student dicts and returns a list of just the names.",
+    "test": "students = [{'name':'Amina','score':88,'grade':'B'},{'name':'Brian','score':72,'grade':'C'}]\nprint(get_all_names(students))",
+    "output": "['Amina', 'Brian']",
+    "student_branch": "issue-24/get-all-names",
+    "project_branch": "project/student-results",
+    "label": "data-structures"
+  },
+  {
+    "number": 25,
+    "title": "Write create_expense(desc, amount, category) \u2014 return dict",
+    "task": "Write a function that takes a description, amount, and category and returns a dict with those keys.",
+    "test": "print(create_expense('Lunch', 250, 'food'))",
+    "output": "{'desc': 'Lunch', 'amount': 250, 'category': 'food'}",
+    "student_branch": "issue-25/create-expense",
+    "project_branch": "project/expense-tracker",
+    "label": "data-structures"
+  },
+  {
+    "number": 26,
+    "title": "Write add_expense(expenses, desc, amount, category)",
+    "task": "Write a function that creates an expense dict and appends it to the expenses list. Return the updated list.",
+    "test": "expenses = []\nprint(add_expense(expenses,'Fare',50,'transport'))",
+    "output": "[{'desc': 'Fare', 'amount': 50, 'category': 'transport'}]",
+    "student_branch": "issue-26/add-expense",
+    "project_branch": "project/expense-tracker",
+    "label": "data-structures"
+  },
+  {
+    "number": 27,
+    "title": "Write get_total(expenses) \u2014 sum all amounts",
+    "task": "Write a function that loops through a list of expense dicts and returns the total of all amounts.",
+    "test": "expenses = [{'desc':'A','amount':200,'category':'food'},{'desc':'B','amount':100,'category':'transport'}]\nprint(get_total(expenses))",
+    "output": "300",
+    "student_branch": "issue-27/get-total",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 28,
+    "title": "Write get_by_category(expenses, category) \u2014 filter",
+    "task": "Write a function that returns only the expenses that match the given category.",
+    "test": "expenses = [{'desc':'Lunch','amount':200,'category':'food'},{'desc':'Fare','amount':50,'category':'transport'}]\nprint(get_by_category(expenses,'food'))",
+    "output": "[{'desc': 'Lunch', 'amount': 200, 'category': 'food'}]",
+    "student_branch": "issue-28/by-category",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 29,
+    "title": "Write category_total(expenses, category) \u2014 sum by category",
+    "task": "Write a function that returns the total amount spent in a specific category.",
+    "test": "expenses = [{'desc':'Lunch','amount':200,'category':'food'},{'desc':'Snack','amount':50,'category':'food'}]\nprint(category_total(expenses,'food'))",
+    "output": "250",
+    "student_branch": "issue-29/category-total",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 30,
+    "title": "Write is_valid_amount(amount) \u2014 validate",
+    "task": "Write a function that returns True if the amount is a positive number greater than 0, False otherwise.",
+    "test": "print(is_valid_amount(200))\nprint(is_valid_amount(-50))\nprint(is_valid_amount(0))",
+    "output": "True\nFalse\nFalse",
+    "student_branch": "issue-30/valid-amount",
+    "project_branch": "project/expense-tracker",
+    "label": "conditionals"
+  },
+  {
+    "number": 31,
+    "title": "Write is_valid_category(category) \u2014 validate category",
+    "task": "Write a function that returns True if category is one of: 'food', 'transport', 'bills', 'entertainment', 'other'. False otherwise.",
+    "test": "print(is_valid_category('food'))\nprint(is_valid_category('games'))",
+    "output": "True\nFalse",
+    "student_branch": "issue-31/valid-category",
+    "project_branch": "project/expense-tracker",
+    "label": "conditionals"
+  },
+  {
+    "number": 32,
+    "title": "Write get_most_expensive(expenses) \u2014 return highest",
+    "task": "Write a function that returns the expense dict with the highest amount. Use a loop, not max().",
+    "test": "expenses = [{'desc':'Rent','amount':8000,'category':'bills'},{'desc':'Lunch','amount':300,'category':'food'}]\nprint(get_most_expensive(expenses))",
+    "output": "{'desc': 'Rent', 'amount': 8000, 'category': 'bills'}",
+    "student_branch": "issue-32/most-expensive",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 33,
+    "title": "Write get_cheapest(expenses) \u2014 return lowest",
+    "task": "Write a function that returns the expense dict with the lowest amount. Use a loop, not min().",
+    "test": "expenses = [{'desc':'Rent','amount':8000,'category':'bills'},{'desc':'Lunch','amount':300,'category':'food'}]\nprint(get_cheapest(expenses))",
+    "output": "{'desc': 'Lunch', 'amount': 300, 'category': 'food'}",
+    "student_branch": "issue-33/cheapest",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 34,
+    "title": "Write count_expenses(expenses) \u2014 return count",
+    "task": "Write a function that returns the number of expenses in the list without using len().",
+    "test": "expenses = [{'desc':'A','amount':100,'category':'food'},{'desc':'B','amount':50,'category':'transport'}]\nprint(count_expenses(expenses))",
+    "output": "2",
+    "student_branch": "issue-34/count-expenses",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 35,
+    "title": "Write delete_expense(expenses, desc) \u2014 remove by description",
+    "task": "Write a function that removes the first expense whose description matches. Return the updated list.",
+    "test": "expenses = [{'desc':'Lunch','amount':200,'category':'food'},{'desc':'Fare','amount':50,'category':'transport'}]\nprint(delete_expense(expenses,'Lunch'))",
+    "output": "[{'desc': 'Fare', 'amount': 50, 'category': 'transport'}]",
+    "student_branch": "issue-35/delete-expense",
+    "project_branch": "project/expense-tracker",
+    "label": "data-structures"
+  },
+  {
+    "number": 36,
+    "title": "Write list_expenses(expenses) \u2014 print all neatly",
+    "task": "Write a function that loops through expenses and prints each one as: '1. Lunch | food | KES 200'",
+    "test": "expenses = [{'desc':'Lunch','amount':200,'category':'food'}]\nlist_expenses(expenses)",
+    "output": "1. Lunch | food | KES 200",
+    "student_branch": "issue-36/list-expenses",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 37,
+    "title": "Write get_average_expense(expenses) \u2014 return average",
+    "task": "Write a function that returns the average amount across all expenses, rounded to 2 decimal places.",
+    "test": "expenses = [{'desc':'A','amount':100,'category':'food'},{'desc':'B','amount':200,'category':'bills'}]\nprint(get_average_expense(expenses))",
+    "output": "150.0",
+    "student_branch": "issue-37/average-expense",
+    "project_branch": "project/expense-tracker",
+    "label": "functions"
+  },
+  {
+    "number": 38,
+    "title": "Write get_all_categories(expenses) \u2014 unique list",
+    "task": "Write a function that returns a list of unique categories from the expenses (no duplicates).",
+    "test": "expenses = [{'desc':'A','amount':100,'category':'food'},{'desc':'B','amount':50,'category':'food'},{'desc':'C','amount':200,'category':'bills'}]\nprint(get_all_categories(expenses))",
+    "output": "['food', 'bills']",
+    "student_branch": "issue-38/all-categories",
+    "project_branch": "project/expense-tracker",
+    "label": "data-structures"
+  },
+  {
+    "number": 39,
+    "title": "Write is_over_budget(total, budget) \u2014 check budget",
+    "task": "Write a function that returns True if total spending exceeds budget, False otherwise. Also print a message.",
+    "test": "print(is_over_budget(5000, 4000))",
+    "output": "Over budget!\nTrue",
+    "student_branch": "issue-39/over-budget",
+    "project_branch": "project/expense-tracker",
+    "label": "conditionals"
+  },
+  {
+    "number": 40,
+    "title": "Write get_budget_remaining(total, budget) \u2014 return remaining",
+    "task": "Write a function that returns how much budget is left. If total > budget, return a negative number.",
+    "test": "print(get_budget_remaining(3000, 5000))\nprint(get_budget_remaining(6000, 5000))",
+    "output": "2000\n-1000",
+    "student_branch": "issue-40/budget-remaining",
+    "project_branch": "project/expense-tracker",
+    "label": "functions"
+  },
+  {
+    "number": 41,
+    "title": "Write expenses_above(expenses, amount) \u2014 filter by amount",
+    "task": "Write a function that returns a list of expenses where the amount is greater than the given value.",
+    "test": "expenses = [{'desc':'A','amount':500,'category':'food'},{'desc':'B','amount':100,'category':'transport'}]\nprint(expenses_above(expenses, 200))",
+    "output": "[{'desc': 'A', 'amount': 500, 'category': 'food'}]",
+    "student_branch": "issue-41/expenses-above",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 42,
+    "title": "Write expenses_below(expenses, amount) \u2014 filter by amount",
+    "task": "Write a function that returns a list of expenses where the amount is less than the given value.",
+    "test": "expenses = [{'desc':'A','amount':500,'category':'food'},{'desc':'B','amount':100,'category':'transport'}]\nprint(expenses_below(expenses, 200))",
+    "output": "[{'desc': 'B', 'amount': 100, 'category': 'transport'}]",
+    "student_branch": "issue-42/expenses-below",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 43,
+    "title": "Write format_expense(expense) \u2014 formatted string",
+    "task": "Write a function that takes an expense dict and returns: 'Lunch (food) \u2014 KES 200'",
+    "test": "print(format_expense({'desc':'Lunch','amount':200,'category':'food'}))",
+    "output": "Lunch (food) \u2014 KES 200",
+    "student_branch": "issue-43/format-expense",
+    "project_branch": "project/expense-tracker",
+    "label": "strings"
+  },
+  {
+    "number": 44,
+    "title": "Write category_summary(expenses) \u2014 dict of totals",
+    "task": "Write a function that returns a dict where each key is a category and value is total spent in that category.",
+    "test": "expenses = [{'desc':'A','amount':200,'category':'food'},{'desc':'B','amount':100,'category':'food'},{'desc':'C','amount':300,'category':'bills'}]\nprint(category_summary(expenses))",
+    "output": "{'food': 300, 'bills': 300}",
+    "student_branch": "issue-44/category-summary",
+    "project_branch": "project/expense-tracker",
+    "label": "data-structures"
+  },
+  {
+    "number": 45,
+    "title": "Write find_expense(expenses, desc) \u2014 search by description",
+    "task": "Write a function that searches expenses by description and returns the matching dict, or 'Not found'.",
+    "test": "expenses = [{'desc':'Lunch','amount':200,'category':'food'}]\nprint(find_expense(expenses,'Lunch'))",
+    "output": "{'desc': 'Lunch', 'amount': 200, 'category': 'food'}",
+    "student_branch": "issue-45/find-expense",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 46,
+    "title": "Write has_category(expenses, category) \u2014 check if exists",
+    "task": "Write a function that returns True if any expense belongs to the given category.",
+    "test": "expenses = [{'desc':'Lunch','amount':200,'category':'food'}]\nprint(has_category(expenses,'food'))\nprint(has_category(expenses,'bills'))",
+    "output": "True\nFalse",
+    "student_branch": "issue-46/has-category",
+    "project_branch": "project/expense-tracker",
+    "label": "conditionals"
+  },
+  {
+    "number": 47,
+    "title": "Write get_expense_count_by_category(expenses, category)",
+    "task": "Write a function that counts how many expenses belong to a specific category.",
+    "test": "expenses = [{'desc':'A','amount':100,'category':'food'},{'desc':'B','amount':50,'category':'food'},{'desc':'C','amount':200,'category':'bills'}]\nprint(get_expense_count_by_category(expenses,'food'))",
+    "output": "2",
+    "student_branch": "issue-47/count-by-category",
+    "project_branch": "project/expense-tracker",
+    "label": "loops"
+  },
+  {
+    "number": 48,
+    "title": "Write clear_expenses(expenses) \u2014 empty the list",
+    "task": "Write a function that removes all items from the expenses list and returns an empty list.",
+    "test": "expenses = [{'desc':'Lunch','amount':200,'category':'food'}]\nprint(clear_expenses(expenses))",
+    "output": "[]",
+    "student_branch": "issue-48/clear-expenses",
+    "project_branch": "project/expense-tracker",
+    "label": "functions"
+  },
+  {
+    "number": 49,
+    "title": "Write create_product(name, price, quantity) \u2014 return dict",
+    "task": "Write a function that takes a product name, price, and quantity and returns a dict with those keys.",
+    "test": "print(create_product('Maize Flour', 180, 50))",
+    "output": "{'name': 'Maize Flour', 'price': 180, 'quantity': 50}",
+    "student_branch": "issue-49/create-product",
+    "project_branch": "project/shop-inventory",
+    "label": "data-structures"
+  },
+  {
+    "number": 50,
+    "title": "Write add_product(inventory, name, price, quantity)",
+    "task": "Write a function that creates a product dict and appends it to the inventory list. Return the updated list.",
+    "test": "inventory = []\nprint(add_product(inventory,'Sugar',130,100))",
+    "output": "[{'name': 'Sugar', 'price': 130, 'quantity': 100}]",
+    "student_branch": "issue-50/add-product",
+    "project_branch": "project/shop-inventory",
+    "label": "data-structures"
+  },
+  {
+    "number": 51,
+    "title": "Write find_product(inventory, name) \u2014 search by name",
+    "task": "Write a function that searches inventory by product name and returns the dict, or 'Not found'.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':100}]\nprint(find_product(inventory,'Sugar'))",
+    "output": "{'name': 'Sugar', 'price': 130, 'quantity': 100}",
+    "student_branch": "issue-51/find-product",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 52,
+    "title": "Write remove_product(inventory, name) \u2014 delete product",
+    "task": "Write a function that removes a product by name from the inventory list. Return updated list.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':100},{'name':'Salt','price':50,'quantity':200}]\nprint(remove_product(inventory,'Sugar'))",
+    "output": "[{'name': 'Salt', 'price': 50, 'quantity': 200}]",
+    "student_branch": "issue-52/remove-product",
+    "project_branch": "project/shop-inventory",
+    "label": "data-structures"
+  },
+  {
+    "number": 53,
+    "title": "Write update_price(inventory, name, new_price)",
+    "task": "Write a function that finds a product by name and updates its price. Return the updated list.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':100}]\nprint(update_price(inventory,'Sugar',150))",
+    "output": "[{'name': 'Sugar', 'price': 150, 'quantity': 100}]",
+    "student_branch": "issue-53/update-price",
+    "project_branch": "project/shop-inventory",
+    "label": "data-structures"
+  },
+  {
+    "number": 54,
+    "title": "Write update_quantity(inventory, name, new_qty)",
+    "task": "Write a function that finds a product by name and updates its quantity. Return the updated list.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':100}]\nprint(update_quantity(inventory,'Sugar',200))",
+    "output": "[{'name': 'Sugar', 'price': 130, 'quantity': 200}]",
+    "student_branch": "issue-54/update-quantity",
+    "project_branch": "project/shop-inventory",
+    "label": "data-structures"
+  },
+  {
+    "number": 55,
+    "title": "Write list_inventory(inventory) \u2014 print all products",
+    "task": "Write a function that prints all products neatly: '1. Sugar | Price: KES 130 | Qty: 100'",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':100}]\nlist_inventory(inventory)",
+    "output": "1. Sugar | Price: KES 130 | Qty: 100",
+    "student_branch": "issue-55/list-inventory",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 56,
+    "title": "Write get_low_stock(inventory, minimum) \u2014 low stock alert",
+    "task": "Write a function that returns a list of products whose quantity is below the minimum.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5},{'name':'Salt','price':50,'quantity':100}]\nprint(get_low_stock(inventory,10))",
+    "output": "[{'name': 'Sugar', 'price': 130, 'quantity': 5}]",
+    "student_branch": "issue-56/low-stock",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 57,
+    "title": "Write is_in_stock(inventory, name) \u2014 check availability",
+    "task": "Write a function that returns True if a product with the given name exists and has quantity > 0.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5}]\nprint(is_in_stock(inventory,'Sugar'))\nprint(is_in_stock(inventory,'Milk'))",
+    "output": "True\nFalse",
+    "student_branch": "issue-57/in-stock",
+    "project_branch": "project/shop-inventory",
+    "label": "conditionals"
+  },
+  {
+    "number": 58,
+    "title": "Write get_total_inventory_value(inventory)",
+    "task": "Write a function that returns the total value of all stock: sum of (price x quantity) for all products.",
+    "test": "inventory = [{'name':'Sugar','price':100,'quantity':10},{'name':'Salt','price':50,'quantity':20}]\nprint(get_total_inventory_value(inventory))",
+    "output": "2000",
+    "student_branch": "issue-58/inventory-value",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 59,
+    "title": "Write get_most_stocked(inventory) \u2014 most items",
+    "task": "Write a function that returns the product with the highest quantity.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5},{'name':'Salt','price':50,'quantity':200}]\nprint(get_most_stocked(inventory)['name'])",
+    "output": "Salt",
+    "student_branch": "issue-59/most-stocked",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 60,
+    "title": "Write get_least_stocked(inventory) \u2014 fewest items",
+    "task": "Write a function that returns the product with the lowest quantity.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5},{'name':'Salt','price':50,'quantity':200}]\nprint(get_least_stocked(inventory)['name'])",
+    "output": "Sugar",
+    "student_branch": "issue-60/least-stocked",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 61,
+    "title": "Write count_products(inventory) \u2014 count without len()",
+    "task": "Write a function that counts the number of products in inventory without using len().",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5},{'name':'Salt','price':50,'quantity':200}]\nprint(count_products(inventory))",
+    "output": "2",
+    "student_branch": "issue-61/count-products",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 62,
+    "title": "Write is_valid_price(price) \u2014 validate price",
+    "task": "Write a function that returns True if price is a number greater than 0.",
+    "test": "print(is_valid_price(150))\nprint(is_valid_price(-10))\nprint(is_valid_price(0))",
+    "output": "True\nFalse\nFalse",
+    "student_branch": "issue-62/valid-price",
+    "project_branch": "project/shop-inventory",
+    "label": "conditionals"
+  },
+  {
+    "number": 63,
+    "title": "Write is_valid_quantity(qty) \u2014 validate quantity",
+    "task": "Write a function that returns True if quantity is an integer of 0 or more.",
+    "test": "print(is_valid_quantity(50))\nprint(is_valid_quantity(-5))",
+    "output": "True\nFalse",
+    "student_branch": "issue-63/valid-quantity",
+    "project_branch": "project/shop-inventory",
+    "label": "conditionals"
+  },
+  {
+    "number": 64,
+    "title": "Write sell_product(inventory, name, qty_sold)",
+    "task": "Write a function that reduces a product's quantity by qty_sold. If not enough stock, print 'Insufficient stock'. Return updated list.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':10}]\nprint(sell_product(inventory,'Sugar',3))",
+    "output": "[{'name': 'Sugar', 'price': 130, 'quantity': 7}]",
+    "student_branch": "issue-64/sell-product",
+    "project_branch": "project/shop-inventory",
+    "label": "conditionals"
+  },
+  {
+    "number": 65,
+    "title": "Write restock_product(inventory, name, qty_added)",
+    "task": "Write a function that increases a product's quantity by qty_added. Return updated list.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':10}]\nprint(restock_product(inventory,'Sugar',50))",
+    "output": "[{'name': 'Sugar', 'price': 130, 'quantity': 60}]",
+    "student_branch": "issue-65/restock-product",
+    "project_branch": "project/shop-inventory",
+    "label": "data-structures"
+  },
+  {
+    "number": 66,
+    "title": "Write get_expensive_products(inventory, threshold)",
+    "task": "Write a function that returns products whose price is above the threshold.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5},{'name':'Cooking Oil','price':350,'quantity':20}]\nprint(get_expensive_products(inventory,200))",
+    "output": "[{'name': 'Cooking Oil', 'price': 350, 'quantity': 20}]",
+    "student_branch": "issue-66/expensive-products",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 67,
+    "title": "Write get_affordable_products(inventory, threshold)",
+    "task": "Write a function that returns products whose price is at or below the threshold.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5},{'name':'Cooking Oil','price':350,'quantity':20}]\nprint(get_affordable_products(inventory,200))",
+    "output": "[{'name': 'Sugar', 'price': 130, 'quantity': 5}]",
+    "student_branch": "issue-67/affordable-products",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 68,
+    "title": "Write has_product(inventory, name) \u2014 check existence",
+    "task": "Write a function that returns True if a product with that name exists in inventory.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5}]\nprint(has_product(inventory,'Sugar'))\nprint(has_product(inventory,'Milk'))",
+    "output": "True\nFalse",
+    "student_branch": "issue-68/has-product",
+    "project_branch": "project/shop-inventory",
+    "label": "conditionals"
+  },
+  {
+    "number": 69,
+    "title": "Write get_all_product_names(inventory) \u2014 list of names",
+    "task": "Write a function that returns a list of all product names from the inventory.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':5},{'name':'Salt','price':50,'quantity':200}]\nprint(get_all_product_names(inventory))",
+    "output": "['Sugar', 'Salt']",
+    "student_branch": "issue-69/all-names",
+    "project_branch": "project/shop-inventory",
+    "label": "data-structures"
+  },
+  {
+    "number": 70,
+    "title": "Write format_product(product) \u2014 formatted string",
+    "task": "Write a function that returns a product as: 'Sugar \u2014 KES 130 (50 in stock)'",
+    "test": "print(format_product({'name':'Sugar','price':130,'quantity':50}))",
+    "output": "Sugar \u2014 KES 130 (50 in stock)",
+    "student_branch": "issue-70/format-product",
+    "project_branch": "project/shop-inventory",
+    "label": "strings"
+  },
+  {
+    "number": 71,
+    "title": "Write get_out_of_stock(inventory) \u2014 zero quantity items",
+    "task": "Write a function that returns all products with quantity equal to 0.",
+    "test": "inventory = [{'name':'Sugar','price':130,'quantity':0},{'name':'Salt','price':50,'quantity':200}]\nprint(get_out_of_stock(inventory))",
+    "output": "[{'name': 'Sugar', 'price': 130, 'quantity': 0}]",
+    "student_branch": "issue-71/out-of-stock",
+    "project_branch": "project/shop-inventory",
+    "label": "loops"
+  },
+  {
+    "number": 72,
+    "title": "Write get_inventory_summary(inventory) \u2014 summary dict",
+    "task": "Write a function that returns a dict: total_products, total_items (sum of quantities), total_value (sum of price*qty).",
+    "test": "inventory = [{'name':'Sugar','price':100,'quantity':10},{'name':'Salt','price':50,'quantity':20}]\nprint(get_inventory_summary(inventory))",
+    "output": "{'total_products': 2, 'total_items': 30, 'total_value': 2000}",
+    "student_branch": "issue-72/inventory-summary",
+    "project_branch": "project/shop-inventory",
+    "label": "functions"
+  },
+  {
+    "number": 73,
+    "title": "Write create_route(name, distance_km, base_fare)",
+    "task": "Write a function that returns a dict with keys: name, distance_km, base_fare.",
+    "test": "print(create_route('CBD to Westlands', 5, 50))",
+    "output": "{'name': 'CBD to Westlands', 'distance_km': 5, 'base_fare': 50}",
+    "student_branch": "issue-73/create-route",
+    "project_branch": "project/matatu-fare",
+    "label": "data-structures"
+  },
+  {
+    "number": 74,
+    "title": "Write add_route(routes, name, distance_km, base_fare)",
+    "task": "Write a function that creates a route and appends it to the routes list. Return updated list.",
+    "test": "routes = []\nprint(add_route(routes,'CBD to Karen',15,100))",
+    "output": "[{'name': 'CBD to Karen', 'distance_km': 15, 'base_fare': 100}]",
+    "student_branch": "issue-74/add-route",
+    "project_branch": "project/matatu-fare",
+    "label": "data-structures"
+  },
+  {
+    "number": 75,
+    "title": "Write find_route(routes, name) \u2014 search route",
+    "task": "Write a function that finds a route by name and returns it, or 'Route not found'.",
+    "test": "routes = [{'name':'CBD to Westlands','distance_km':5,'base_fare':50}]\nprint(find_route(routes,'CBD to Westlands'))",
+    "output": "{'name': 'CBD to Westlands', 'distance_km': 5, 'base_fare': 50}",
+    "student_branch": "issue-75/find-route",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 76,
+    "title": "Write list_routes(routes) \u2014 print all routes",
+    "task": "Write a function that prints all routes neatly: '1. CBD to Westlands | 5km | KES 50'",
+    "test": "routes = [{'name':'CBD to Westlands','distance_km':5,'base_fare':50}]\nlist_routes(routes)",
+    "output": "1. CBD to Westlands | 5km | KES 50",
+    "student_branch": "issue-76/list-routes",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 77,
+    "title": "Write calculate_fare(base_fare, passengers) \u2014 total fare",
+    "task": "Write a function that multiplies base_fare by number of passengers and returns total.",
+    "test": "print(calculate_fare(50, 14))",
+    "output": "700",
+    "student_branch": "issue-77/calculate-fare",
+    "project_branch": "project/matatu-fare",
+    "label": "functions"
+  },
+  {
+    "number": 78,
+    "title": "Write apply_peak_fare(base_fare, is_peak) \u2014 peak hours",
+    "task": "Write a function that returns base_fare * 1.5 if is_peak is True, otherwise returns base_fare unchanged.",
+    "test": "print(apply_peak_fare(50, True))\nprint(apply_peak_fare(50, False))",
+    "output": "75.0\n50",
+    "student_branch": "issue-78/peak-fare",
+    "project_branch": "project/matatu-fare",
+    "label": "conditionals"
+  },
+  {
+    "number": 79,
+    "title": "Write is_valid_passengers(count) \u2014 validate count",
+    "task": "Write a function that returns True if passenger count is between 1 and 14 (matatu capacity).",
+    "test": "print(is_valid_passengers(14))\nprint(is_valid_passengers(15))\nprint(is_valid_passengers(0))",
+    "output": "True\nFalse\nFalse",
+    "student_branch": "issue-79/valid-passengers",
+    "project_branch": "project/matatu-fare",
+    "label": "conditionals"
+  },
+  {
+    "number": 80,
+    "title": "Write create_trip(route_name, passengers, fare_paid)",
+    "task": "Write a function that returns a trip dict with: route_name, passengers, fare_paid.",
+    "test": "print(create_trip('CBD to Westlands', 12, 600))",
+    "output": "{'route_name': 'CBD to Westlands', 'passengers': 12, 'fare_paid': 600}",
+    "student_branch": "issue-80/create-trip",
+    "project_branch": "project/matatu-fare",
+    "label": "data-structures"
+  },
+  {
+    "number": 81,
+    "title": "Write add_trip(trips, route_name, passengers, fare_paid)",
+    "task": "Write a function that creates a trip dict and appends to trips list. Return updated list.",
+    "test": "trips = []\nprint(add_trip(trips,'CBD to Karen',10,1000))",
+    "output": "[{'route_name': 'CBD to Karen', 'passengers': 10, 'fare_paid': 1000}]",
+    "student_branch": "issue-81/add-trip",
+    "project_branch": "project/matatu-fare",
+    "label": "data-structures"
+  },
+  {
+    "number": 82,
+    "title": "Write get_total_revenue(trips) \u2014 sum all fare_paid",
+    "task": "Write a function that returns the total revenue from all trips.",
+    "test": "trips = [{'route_name':'A','passengers':10,'fare_paid':500},{'route_name':'B','passengers':8,'fare_paid':400}]\nprint(get_total_revenue(trips))",
+    "output": "900",
+    "student_branch": "issue-82/total-revenue",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 83,
+    "title": "Write get_total_passengers(trips) \u2014 sum all passengers",
+    "task": "Write a function that returns the total number of passengers across all trips.",
+    "test": "trips = [{'route_name':'A','passengers':10,'fare_paid':500},{'route_name':'B','passengers':8,'fare_paid':400}]\nprint(get_total_passengers(trips))",
+    "output": "18",
+    "student_branch": "issue-83/total-passengers",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 84,
+    "title": "Write get_trips_by_route(trips, route_name) \u2014 filter",
+    "task": "Write a function that returns all trips for a specific route name.",
+    "test": "trips = [{'route_name':'CBD to Westlands','passengers':10,'fare_paid':500},{'route_name':'CBD to Karen','passengers':8,'fare_paid':400}]\nprint(get_trips_by_route(trips,'CBD to Karen'))",
+    "output": "[{'route_name': 'CBD to Karen', 'passengers': 8, 'fare_paid': 400}]",
+    "student_branch": "issue-84/trips-by-route",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 85,
+    "title": "Write count_trips(trips) \u2014 count without len()",
+    "task": "Write a function that returns the number of trips without using len().",
+    "test": "trips = [{'route_name':'A','passengers':10,'fare_paid':500},{'route_name':'B','passengers':8,'fare_paid':400}]\nprint(count_trips(trips))",
+    "output": "2",
+    "student_branch": "issue-85/count-trips",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 86,
+    "title": "Write get_average_passengers(trips) \u2014 average per trip",
+    "task": "Write a function that returns the average number of passengers per trip, rounded to 1 decimal place.",
+    "test": "trips = [{'route_name':'A','passengers':10,'fare_paid':500},{'route_name':'B','passengers':8,'fare_paid':400}]\nprint(get_average_passengers(trips))",
+    "output": "9.0",
+    "student_branch": "issue-86/avg-passengers",
+    "project_branch": "project/matatu-fare",
+    "label": "functions"
+  },
+  {
+    "number": 87,
+    "title": "Write get_best_trip(trips) \u2014 highest revenue trip",
+    "task": "Write a function that returns the trip with the highest fare_paid.",
+    "test": "trips = [{'route_name':'A','passengers':10,'fare_paid':500},{'route_name':'B','passengers':8,'fare_paid':1000}]\nprint(get_best_trip(trips)['route_name'])",
+    "output": "B",
+    "student_branch": "issue-87/best-trip",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 88,
+    "title": "Write remove_route(routes, name) \u2014 delete a route",
+    "task": "Write a function that removes a route by name from the list. Return updated list.",
+    "test": "routes = [{'name':'CBD to Westlands','distance_km':5,'base_fare':50},{'name':'CBD to Karen','distance_km':15,'base_fare':100}]\nprint(remove_route(routes,'CBD to Westlands'))",
+    "output": "[{'name': 'CBD to Karen', 'distance_km': 15, 'base_fare': 100}]",
+    "student_branch": "issue-88/remove-route",
+    "project_branch": "project/matatu-fare",
+    "label": "data-structures"
+  },
+  {
+    "number": 89,
+    "title": "Write update_base_fare(routes, name, new_fare)",
+    "task": "Write a function that updates the base_fare of a named route. Return updated list.",
+    "test": "routes = [{'name':'CBD to Westlands','distance_km':5,'base_fare':50}]\nprint(update_base_fare(routes,'CBD to Westlands',80))",
+    "output": "[{'name': 'CBD to Westlands', 'distance_km': 5, 'base_fare': 80}]",
+    "student_branch": "issue-89/update-fare",
+    "project_branch": "project/matatu-fare",
+    "label": "data-structures"
+  },
+  {
+    "number": 90,
+    "title": "Write is_valid_fare(fare) \u2014 validate fare",
+    "task": "Write a function that returns True if fare is a positive number.",
+    "test": "print(is_valid_fare(50))\nprint(is_valid_fare(-10))\nprint(is_valid_fare(0))",
+    "output": "True\nFalse\nFalse",
+    "student_branch": "issue-90/valid-fare",
+    "project_branch": "project/matatu-fare",
+    "label": "conditionals"
+  },
+  {
+    "number": 91,
+    "title": "Write format_trip(trip) \u2014 formatted string",
+    "task": "Write a function that formats a trip as: 'Route: CBD to Westlands | Passengers: 12 | Revenue: KES 600'",
+    "test": "print(format_trip({'route_name':'CBD to Westlands','passengers':12,'fare_paid':600}))",
+    "output": "Route: CBD to Westlands | Passengers: 12 | Revenue: KES 600",
+    "student_branch": "issue-91/format-trip",
+    "project_branch": "project/matatu-fare",
+    "label": "strings"
+  },
+  {
+    "number": 92,
+    "title": "Write get_short_routes(routes, max_km) \u2014 filter by distance",
+    "task": "Write a function that returns routes where distance_km is less than or equal to max_km.",
+    "test": "routes = [{'name':'CBD to Westlands','distance_km':5,'base_fare':50},{'name':'CBD to Karen','distance_km':15,'base_fare':100}]\nprint(get_short_routes(routes,10))",
+    "output": "[{'name': 'CBD to Westlands', 'distance_km': 5, 'base_fare': 50}]",
+    "student_branch": "issue-92/short-routes",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 93,
+    "title": "Write get_long_routes(routes, min_km) \u2014 filter by distance",
+    "task": "Write a function that returns routes where distance_km is greater than min_km.",
+    "test": "routes = [{'name':'CBD to Westlands','distance_km':5,'base_fare':50},{'name':'CBD to Karen','distance_km':15,'base_fare':100}]\nprint(get_long_routes(routes,10))",
+    "output": "[{'name': 'CBD to Karen', 'distance_km': 15, 'base_fare': 100}]",
+    "student_branch": "issue-93/long-routes",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 94,
+    "title": "Write get_revenue_by_route(trips, route_name) \u2014 sum revenue",
+    "task": "Write a function that returns total revenue from trips for a specific route.",
+    "test": "trips = [{'route_name':'CBD to Westlands','passengers':10,'fare_paid':500},{'route_name':'CBD to Westlands','passengers':12,'fare_paid':600}]\nprint(get_revenue_by_route(trips,'CBD to Westlands'))",
+    "output": "1100",
+    "student_branch": "issue-94/revenue-by-route",
+    "project_branch": "project/matatu-fare",
+    "label": "loops"
+  },
+  {
+    "number": 95,
+    "title": "Write has_route(routes, name) \u2014 check existence",
+    "task": "Write a function that returns True if a route with the given name exists.",
+    "test": "routes = [{'name':'CBD to Westlands','distance_km':5,'base_fare':50}]\nprint(has_route(routes,'CBD to Westlands'))\nprint(has_route(routes,'CBD to Mombasa'))",
+    "output": "True\nFalse",
+    "student_branch": "issue-95/has-route",
+    "project_branch": "project/matatu-fare",
+    "label": "conditionals"
+  },
+  {
+    "number": 96,
+    "title": "Write get_daily_summary(trips) \u2014 summary dict",
+    "task": "Write a function that returns a dict: total_trips, total_passengers, total_revenue.",
+    "test": "trips = [{'route_name':'A','passengers':10,'fare_paid':500},{'route_name':'B','passengers':8,'fare_paid':400}]\nprint(get_daily_summary(trips))",
+    "output": "{'total_trips': 2, 'total_passengers': 18, 'total_revenue': 900}",
+    "student_branch": "issue-96/daily-summary",
+    "project_branch": "project/matatu-fare",
+    "label": "functions"
+  },
+  {
+    "number": 97,
+    "title": "Write create_patient(name, age, condition) \u2014 return dict",
+    "task": "Write a function that returns a dict with keys: name, age, condition, status (default 'admitted').",
+    "test": "print(create_patient('John Otieno', 35, 'Malaria'))",
+    "output": "{'name': 'John Otieno', 'age': 35, 'condition': 'Malaria', 'status': 'admitted'}",
+    "student_branch": "issue-97/create-patient",
+    "project_branch": "project/hospital-records",
+    "label": "data-structures"
+  },
+  {
+    "number": 98,
+    "title": "Write add_patient(patients, name, age, condition)",
+    "task": "Write a function that creates a patient and appends to the list. Return updated list.",
+    "test": "patients = []\nprint(add_patient(patients,'Jane Wanjiku',28,'Flu'))",
+    "output": "[{'name': 'Jane Wanjiku', 'age': 28, 'condition': 'Flu', 'status': 'admitted'}]",
+    "student_branch": "issue-98/add-patient",
+    "project_branch": "project/hospital-records",
+    "label": "data-structures"
+  },
+  {
+    "number": 99,
+    "title": "Write find_patient(patients, name) \u2014 search by name",
+    "task": "Write a function that returns a patient dict by name, or 'Patient not found'.",
+    "test": "patients = [{'name':'John Otieno','age':35,'condition':'Malaria','status':'admitted'}]\nprint(find_patient(patients,'John Otieno'))",
+    "output": "{'name': 'John Otieno', 'age': 35, 'condition': 'Malaria', 'status': 'admitted'}",
+    "student_branch": "issue-99/find-patient",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 100,
+    "title": "Write discharge_patient(patients, name) \u2014 update status",
+    "task": "Write a function that finds a patient by name and changes their status to 'discharged'. Return updated list.",
+    "test": "patients = [{'name':'John Otieno','age':35,'condition':'Malaria','status':'admitted'}]\nprint(discharge_patient(patients,'John Otieno')[0]['status'])",
+    "output": "discharged",
+    "student_branch": "issue-100/discharge-patient",
+    "project_branch": "project/hospital-records",
+    "label": "data-structures"
+  },
+  {
+    "number": 101,
+    "title": "Write remove_patient(patients, name) \u2014 delete record",
+    "task": "Write a function that removes a patient by name. Return the updated list.",
+    "test": "patients = [{'name':'John Otieno','age':35,'condition':'Malaria','status':'admitted'},{'name':'Jane','age':28,'condition':'Flu','status':'admitted'}]\nprint(remove_patient(patients,'John Otieno'))",
+    "output": "[{'name': 'Jane', 'age': 28, 'condition': 'Flu', 'status': 'admitted'}]",
+    "student_branch": "issue-101/remove-patient",
+    "project_branch": "project/hospital-records",
+    "label": "data-structures"
+  },
+  {
+    "number": 102,
+    "title": "Write list_patients(patients) \u2014 print all",
+    "task": "Write a function that prints each patient neatly: '1. John Otieno | Age: 35 | Malaria | admitted'",
+    "test": "patients = [{'name':'John Otieno','age':35,'condition':'Malaria','status':'admitted'}]\nlist_patients(patients)",
+    "output": "1. John Otieno | Age: 35 | Malaria | admitted",
+    "student_branch": "issue-102/list-patients",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 103,
+    "title": "Write get_admitted(patients) \u2014 filter admitted only",
+    "task": "Write a function that returns only patients with status 'admitted'.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'},{'name':'Jane','age':28,'condition':'Flu','status':'discharged'}]\nprint(get_admitted(patients))",
+    "output": "[{'name': 'John', 'age': 35, 'condition': 'Malaria', 'status': 'admitted'}]",
+    "student_branch": "issue-103/get-admitted",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 104,
+    "title": "Write get_discharged(patients) \u2014 filter discharged only",
+    "task": "Write a function that returns only patients with status 'discharged'.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'},{'name':'Jane','age':28,'condition':'Flu','status':'discharged'}]\nprint(get_discharged(patients))",
+    "output": "[{'name': 'Jane', 'age': 28, 'condition': 'Flu', 'status': 'discharged'}]",
+    "student_branch": "issue-104/get-discharged",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 105,
+    "title": "Write count_admitted(patients) \u2014 count admitted",
+    "task": "Write a function that counts how many patients are currently admitted.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'},{'name':'Jane','age':28,'condition':'Flu','status':'discharged'}]\nprint(count_admitted(patients))",
+    "output": "1",
+    "student_branch": "issue-105/count-admitted",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 106,
+    "title": "Write count_discharged(patients) \u2014 count discharged",
+    "task": "Write a function that counts how many patients have been discharged.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'},{'name':'Jane','age':28,'condition':'Flu','status':'discharged'}]\nprint(count_discharged(patients))",
+    "output": "1",
+    "student_branch": "issue-106/count-discharged",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 107,
+    "title": "Write is_valid_age(age) \u2014 validate age",
+    "task": "Write a function that returns True if age is a number between 0 and 120.",
+    "test": "print(is_valid_age(35))\nprint(is_valid_age(-1))\nprint(is_valid_age(150))",
+    "output": "True\nFalse\nFalse",
+    "student_branch": "issue-107/valid-age",
+    "project_branch": "project/hospital-records",
+    "label": "conditionals"
+  },
+  {
+    "number": 108,
+    "title": "Write is_valid_name(name) \u2014 validate patient name",
+    "task": "Write a function that returns True if the name is a non-empty string, False otherwise.",
+    "test": "print(is_valid_name('John Otieno'))\nprint(is_valid_name(''))",
+    "output": "True\nFalse",
+    "student_branch": "issue-108/valid-name",
+    "project_branch": "project/hospital-records",
+    "label": "conditionals"
+  },
+  {
+    "number": 109,
+    "title": "Write get_patients_by_condition(patients, condition)",
+    "task": "Write a function that returns all patients with the given condition.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'},{'name':'Jane','age':28,'condition':'Flu','status':'admitted'}]\nprint(get_patients_by_condition(patients,'Malaria'))",
+    "output": "[{'name': 'John', 'age': 35, 'condition': 'Malaria', 'status': 'admitted'}]",
+    "student_branch": "issue-109/by-condition",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 110,
+    "title": "Write update_condition(patients, name, new_condition)",
+    "task": "Write a function that updates a patient's condition by name. Return updated list.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'}]\nprint(update_condition(patients,'John','Typhoid')[0]['condition'])",
+    "output": "Typhoid",
+    "student_branch": "issue-110/update-condition",
+    "project_branch": "project/hospital-records",
+    "label": "data-structures"
+  },
+  {
+    "number": 111,
+    "title": "Write has_patient(patients, name) \u2014 check existence",
+    "task": "Write a function that returns True if a patient with the given name exists.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'}]\nprint(has_patient(patients,'John'))\nprint(has_patient(patients,'Mary'))",
+    "output": "True\nFalse",
+    "student_branch": "issue-111/has-patient",
+    "project_branch": "project/hospital-records",
+    "label": "conditionals"
+  },
+  {
+    "number": 112,
+    "title": "Write get_all_conditions(patients) \u2014 unique list",
+    "task": "Write a function that returns a list of unique conditions across all patients (no duplicates).",
+    "test": "patients = [{'name':'A','age':30,'condition':'Malaria','status':'admitted'},{'name':'B','age':25,'condition':'Malaria','status':'admitted'},{'name':'C','age':40,'condition':'Flu','status':'admitted'}]\nprint(get_all_conditions(patients))",
+    "output": "['Malaria', 'Flu']",
+    "student_branch": "issue-112/all-conditions",
+    "project_branch": "project/hospital-records",
+    "label": "data-structures"
+  },
+  {
+    "number": 113,
+    "title": "Write get_oldest_patient(patients) \u2014 return oldest",
+    "task": "Write a function that returns the patient dict with the highest age.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'},{'name':'Mama Jane','age':72,'condition':'BP','status':'admitted'}]\nprint(get_oldest_patient(patients)['name'])",
+    "output": "Mama Jane",
+    "student_branch": "issue-113/oldest-patient",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 114,
+    "title": "Write get_youngest_patient(patients) \u2014 return youngest",
+    "task": "Write a function that returns the patient dict with the lowest age.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'admitted'},{'name':'Baby A','age':1,'condition':'Fever','status':'admitted'}]\nprint(get_youngest_patient(patients)['name'])",
+    "output": "Baby A",
+    "student_branch": "issue-114/youngest-patient",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 115,
+    "title": "Write get_average_age(patients) \u2014 return average age",
+    "task": "Write a function that returns the average age of all patients, rounded to 1 decimal place.",
+    "test": "patients = [{'name':'A','age':30,'condition':'Flu','status':'admitted'},{'name':'B','age':50,'condition':'BP','status':'admitted'}]\nprint(get_average_age(patients))",
+    "output": "40.0",
+    "student_branch": "issue-115/average-age",
+    "project_branch": "project/hospital-records",
+    "label": "functions"
+  },
+  {
+    "number": 116,
+    "title": "Write count_by_condition(patients, condition) \u2014 count",
+    "task": "Write a function that counts how many patients have a specific condition.",
+    "test": "patients = [{'name':'A','age':30,'condition':'Malaria','status':'admitted'},{'name':'B','age':25,'condition':'Malaria','status':'admitted'},{'name':'C','age':40,'condition':'Flu','status':'admitted'}]\nprint(count_by_condition(patients,'Malaria'))",
+    "output": "2",
+    "student_branch": "issue-116/count-condition",
+    "project_branch": "project/hospital-records",
+    "label": "loops"
+  },
+  {
+    "number": 117,
+    "title": "Write format_patient(patient) \u2014 formatted string",
+    "task": "Write a function that formats a patient as: 'John Otieno | Age: 35 | Condition: Malaria | Status: admitted'",
+    "test": "print(format_patient({'name':'John Otieno','age':35,'condition':'Malaria','status':'admitted'}))",
+    "output": "John Otieno | Age: 35 | Condition: Malaria | Status: admitted",
+    "student_branch": "issue-117/format-patient",
+    "project_branch": "project/hospital-records",
+    "label": "strings"
+  },
+  {
+    "number": 118,
+    "title": "Write get_ward_report(patients) \u2014 summary dict",
+    "task": "Write a function that returns: total_patients, admitted, discharged.",
+    "test": "patients = [{'name':'A','age':30,'condition':'Flu','status':'admitted'},{'name':'B','age':50,'condition':'BP','status':'discharged'}]\nprint(get_ward_report(patients))",
+    "output": "{'total_patients': 2, 'admitted': 1, 'discharged': 1}",
+    "student_branch": "issue-118/ward-report",
+    "project_branch": "project/hospital-records",
+    "label": "functions"
+  },
+  {
+    "number": 119,
+    "title": "Write readmit_patient(patients, name) \u2014 change status back",
+    "task": "Write a function that finds a discharged patient and changes their status back to 'admitted'. Return updated list.",
+    "test": "patients = [{'name':'John','age':35,'condition':'Malaria','status':'discharged'}]\nprint(readmit_patient(patients,'John')[0]['status'])",
+    "output": "admitted",
+    "student_branch": "issue-119/readmit",
+    "project_branch": "project/hospital-records",
+    "label": "data-structures"
+  },
+  {
+    "number": 120,
+    "title": "Write get_patient_summary(patient) \u2014 full summary string",
+    "task": "Write a function that returns a multi-line summary of a patient: name, age, condition, status each on its own line.",
+    "test": "print(get_patient_summary({'name':'John','age':35,'condition':'Malaria','status':'admitted'}))",
+    "output": "Name: John\nAge: 35\nCondition: Malaria\nStatus: admitted",
+    "student_branch": "issue-120/patient-summary",
+    "project_branch": "project/hospital-records",
+    "label": "strings"
+  }
+]

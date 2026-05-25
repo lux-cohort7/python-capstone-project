@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 GH = r"C:\Program Files\GitHub CLI\gh.exe"
-REPO = "Navashub/python-capstone-project"
+REPO = "lux-cohort7/python-capstone-project"
 
 
 def format_body(issue: dict) -> str:

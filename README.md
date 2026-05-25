@@ -2,7 +2,8 @@
 
 A collaborative bootcamp capstone: **120 issues**, **5 projects**, **24 functions each**, **one student per issue**.
 
-Repository: [github.com/Navashub/python-capstone-project](https://github.com/Navashub/python-capstone-project)
+**Organization:** [lux-cohort7](https://github.com/lux-cohort7)  
+**Repository:** [github.com/lux-cohort7/python-capstone-project](https://github.com/lux-cohort7/python-capstone-project)
 
 ---
 
@@ -10,11 +11,11 @@ Repository: [github.com/Navashub/python-capstone-project](https://github.com/Nav
 
 | Project | Folder | Issues | Base branch |
 |---------|--------|--------|-------------|
-| Student Results Management | `student_results/` | [#1–#24](https://github.com/Navashub/python-capstone-project/issues?q=is%3Aissue+is%3Aopen+1..24) | `project/student-results` |
-| Personal Expense Tracker | `expense_tracker/` | [#25–#48](https://github.com/Navashub/python-capstone-project/issues) | `project/expense-tracker` |
-| Shop Inventory System | `shop_inventory/` | [#49–#72](https://github.com/Navashub/python-capstone-project/issues) | `project/shop-inventory` |
-| Matatu Fare Calculator | `matatu_fare/` | [#73–#96](https://github.com/Navashub/python-capstone-project/issues) | `project/matatu-fare` |
-| Hospital Patient Records | `hospital_records/` | [#97–#120](https://github.com/Navashub/python-capstone-project/issues) | `project/hospital-records` |
+| Student Results Management | `student_results/` | [#1–#24](https://github.com/lux-cohort7/python-capstone-project/issues?q=is%3Aissue+is%3Aopen+1..24) | `project/student-results` |
+| Personal Expense Tracker | `expense_tracker/` | [#25–#48](https://github.com/lux-cohort7/python-capstone-project/issues) | `project/expense-tracker` |
+| Shop Inventory System | `shop_inventory/` | [#49–#72](https://github.com/lux-cohort7/python-capstone-project/issues) | `project/shop-inventory` |
+| Matatu Fare Calculator | `matatu_fare/` | [#73–#96](https://github.com/lux-cohort7/python-capstone-project/issues) | `project/matatu-fare` |
+| Hospital Patient Records | `hospital_records/` | [#97–#120](https://github.com/lux-cohort7/python-capstone-project/issues) | `project/hospital-records` |
 
 Labels on issues: `conditionals`, `loops`, `functions`, `data-structures`, `strings`
 
@@ -57,7 +58,7 @@ Use **snake_case** exactly as in the title.
 
 ### 1. Claim an issue
 
-1. Go to [Issues](https://github.com/Navashub/python-capstone-project/issues).
+1. Go to [Issues](https://github.com/lux-cohort7/python-capstone-project/issues).
 2. Pick an **open** issue in your project (or as assigned by your instructor).
 3. **Comment** on the issue (e.g. “I’ll take this”) or assign yourself so two people don’t work on the same one.
 
@@ -74,7 +75,7 @@ Every issue includes:
 ### 3. Clone the repo (first time only)
 
 ```bash
-git clone https://github.com/Navashub/python-capstone-project.git
+git clone https://github.com/lux-cohort7/python-capstone-project.git
 cd python-capstone-project
 ```
 
@@ -181,7 +182,7 @@ Address review comments if any. After merge, your function is part of that proje
 Replace placeholders with your issue details.
 
 ```bash
-git clone https://github.com/Navashub/python-capstone-project.git
+git clone https://github.com/lux-cohort7/python-capstone-project.git
 cd python-capstone-project
 git fetch origin
 git checkout PROJECT_BRANCH

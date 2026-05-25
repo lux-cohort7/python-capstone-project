@@ -46,8 +46,8 @@ From the issue title **"Write `function_name`(...)"** → create **`function_nam
 
 | Issue title | Your file |
 |-------------|-----------|
-| Write `get_grade(score)` — return letter grade | `student_results/get_grade.py` |
-| Write `create_expense(desc, amount, category)` — ... | `expense_tracker/create_expense.py` |
+| Write `get_grade(score)` - return letter grade | `student_results/get_grade.py` |
+| Write `create_expense(desc, amount, category)` - ... | `expense_tracker/create_expense.py` |
 
 Use **snake_case** exactly as in the title.
 
@@ -65,11 +65,11 @@ Use **snake_case** exactly as in the title.
 
 Every issue includes:
 
-- **Task description** — what to implement  
-- **Test to run** — copy into your file or a local test block  
-- **Expected output** — your code must match this  
-- **Branch** — your personal branch name (e.g. `issue-01/get-grade`)  
-- **Project branch** — branch you branch from and open PR into (e.g. `project/student-results`)
+- **Task description** - what to implement  
+- **Test to run** - copy into your file or a local test block  
+- **Expected output** - your code must match this  
+- **Branch** - your personal branch name (e.g. `issue-01/get-grade`)  
+- **Project branch** - branch you branch from and open PR into (e.g. `project/student-results`)
 
 ### 3. Clone the repo (first time only)
 
@@ -167,12 +167,12 @@ Address review comments if any. After merge, your function is part of that proje
 
 ## Rules
 
-1. **One issue per student** — don’t start an issue someone else claimed.  
-2. **One function per file** — filename = function name + `.py`.  
+1. **One issue per student** - don’t start an issue someone else claimed.  
+2. **One function per file** - filename = function name + `.py`.  
 3. **Don’t edit `main.py`** or another student’s `.py` file.  
 4. **Branch from the project branch**, not from `main`.  
 5. **Run the issue test** before opening a PR.  
-6. **Never push directly** to `main` or `project/*` — always use your `issue-XX/...` branch and a PR.
+6. **Never push directly** to `main` or `project/*` - always use your `issue-XX/...` branch and a PR.
 
 ---
 
@@ -213,7 +213,7 @@ Then open a PR: **base** = `PROJECT_BRANCH`, **compare** = `YOUR_ISSUE_BRANCH`, 
 
 ## Need help?
 
-- Git basics: [GitHub Docs — Pull requests](https://docs.github.com/en/pull-requests)  
-- Ask your instructor or comment on your issue  
+- Git basics: [GitHub Docs - Pull requests](https://docs.github.com/en/pull-requests)  
+- Ask me or comment on your issue  
 
-Good luck — pick an issue and ship your function.
+Good luck - pick an issue and ship your function.

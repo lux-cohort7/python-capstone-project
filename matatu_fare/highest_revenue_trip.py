@@ -8,3 +8,8 @@ def get_best_trip(trips):
             best_trip = trip
     return best_trip
     
+
+# add test
+if __name__ == "__main__":
+    trips = [{'route_name':'A','passengers':10,'fare_paid':500},{'route_name':'B','passengers':8,'fare_paid':1000}]
+    print(get_best_trip(trips)['route_name'])

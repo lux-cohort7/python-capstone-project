@@ -2,12 +2,21 @@
 # Returns the patient dictionary with the lowest age.
 
 def get_youngest_patient(patients):
-    pass
+    if not patients:
+        return None # Safety Check - Returns None if the list is empty
+    
+    youngest_patient =  patients[0] # Initialize with the first patient in the list as the youngest
+
+    # Iterate through the list of patients and update the "youngest_patient" if a younger one is found
+    for patient in patients:
+        if patient['age'] < youngest_patient['age']:
+            youngest_patient = patient
+    return youngest_patient
 
 
 # =============================================================
 # Test block
-# =============================================================
+# Run this block to test the function.
 
 if __name__ == "__main__":
     # Test case 1: Basic test with two patients

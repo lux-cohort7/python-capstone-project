@@ -23,8 +23,3 @@ def add_trip(trips, route_name, passengers, fare_paid):
         }
     trips.append(trip)
     return trips
-
-
-
-trips = []
-print(add_trip(trips,'CBD to Karen',10,1000))

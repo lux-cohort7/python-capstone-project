@@ -1,0 +1,17 @@
+# Instructor setup — keep local only
+scripts/
+120_GitHub_Issues.docx
+
+# Student form exports (names, emails, GitHub usernames)
+Contact Information*.csv
+**/collaborators*.csv
+**/org_invite_queue.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.env
+.venv/
+venv/

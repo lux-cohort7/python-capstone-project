@@ -26,3 +26,13 @@ try:
     get_avg_passengers(trips)
 except Exception as e:
     print(f"An error has occured{e}")
+
+def get_total_passengers(trips):
+    total = 0
+
+    for trip in trips:
+        total += trip["passengers"]
+
+    return total
+
+print(get_total_passengers(trips))
